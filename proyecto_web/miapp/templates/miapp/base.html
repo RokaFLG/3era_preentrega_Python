@@ -1,0 +1,11 @@
+{% extends "miapp/base.html" %}
+{% block content %}
+    <!-- Contenido específico de la vista -->
+    <!-- Por ejemplo, el contenido de agregar_categoria.html -->
+    <h1>Agregar Categoría</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+{% endblock %}
